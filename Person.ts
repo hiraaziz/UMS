@@ -1,9 +1,9 @@
 export class Person{
     name: string
-    ID: number
+    ID: string
 
-    constructor(name: string, ID:number){
-        this.name = name
+    constructor(ID:string,name: string){
+        this.name = name;
         this.ID = ID
     }
 }
