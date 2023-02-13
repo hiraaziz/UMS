@@ -1,10 +1,12 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const Person_js_1 = require("./Person.js");
-class Students extends Person_js_1.Person {
+import { Person } from "./Person.js";
+export class Students extends Person {
     course;
-    constructor(name, id) {
-        super(name, id);
+    constructor(id, name) {
+        super(id, name);
         this.course = [];
+    }
+    addCourse(Courses) {
+        this.course.push(Courses);
+        Courses.addStudent(this);
     }
 }
